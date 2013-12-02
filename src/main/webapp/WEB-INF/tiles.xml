@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+        "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+        "http://tilles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+
+	<!-- Base Template contain menu part -->
+	<definition name="baseTemplate" id="baseTemplate" template="/WEB-INF/layout/baseLayout.jsp">
+		<put-attribute name="title" value="${title}" />
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="body" value="${body}" />
+		<put-attribute name="menu" value="/WEB-INF/layout/menu.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+
+	<!-- Mapping for -->
+	<definition name="login" id="login" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/home.jsp"/>
+		<put-attribute name="title" type="string" value="Login Page" />
+	</definition>
+
+<!-- Mapping for Country-->
+	<definition name="country" id="country" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/country.jsp"/>
+		<put-attribute name="title" type="string" value="Country Page" />
+	</definition>
+	
+	<!-- Mapping for State-->
+ <definition name="state" id="state" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/state.jsp"/>
+		<put-attribute name="title" type="string" value="State Page" />
+	</definition> 
+	
+	<!-- Mapping for City-->
+	<definition name="city" id="city" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/city.jsp"/>
+		<put-attribute name="title" type="string" value="City Page" />
+	</definition>
+	<!-- Mapping for Channel-->
+	<definition name="channel" id="channel" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/channel.jsp"/>
+		<put-attribute name="title" type="string" value="Channel Page" />
+	</definition>
+	
+	<!-- Mapping for Sector-->
+	<definition name="sector" id="sector" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/sector.jsp"/>
+		<put-attribute name="title" type="string" value="Sector Page" />
+	</definition>
+	
+	<!-- Mapping for Client-->
+	<definition name="client" id="client" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/client.jsp"/>
+		<put-attribute name="title" type="string" value="Client Page" />
+	</definition>
+	
+	<!-- Mapping for Sub Sector-->
+	<definition name="subsector" id="subsector" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/subsector.jsp"/>
+		<put-attribute name="title" type="string" value="Sub Sector Page" />
+	</definition>
+	
+	<!-- Mapping for Publication-->
+	<definition name="publication" id="publication" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/publication.jsp"/>
+		<put-attribute name="title" type="string" value="Publication Page" />
+	</definition>
+	
+	<!-- Mapping for Party-->
+	<definition name="party" id="party" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/party.jsp"/>
+		<put-attribute name="title" type="string" value="Party Page" />
+	</definition>
+	
+	<!-- Mapping for Advertisement Type-->
+	<definition name="advtype" id="advtype" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/advtype.jsp"/>
+		<put-attribute name="title" type="string" value="Advertisement Type Page" />
+	</definition>
+	
+	<!-- Mapping for Save Tracking-->
+	<definition name="savetracking" id="savetracking" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/savetracking.jsp"/>
+		<put-attribute name="title" type="string" value="Save Tracking Page" />
+	</definition>
+	
+	<!-- Mapping for Advertisement Tracking-->
+	<definition name="advertisement" id="advertisement" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/advertisement.jsp"/>
+		<put-attribute name="title" type="string" value="Advertisement Tracking Page" />
+	</definition>
+	
+	<!-- Mapping for Save Print Tracking -->
+	<definition name="saveprinttracking" id="saveprinttracking"
+		extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/saveprinttracking.jsp" />
+		<put-attribute name="title" type="string"
+			value="Save Print Tracking Page" />
+	</definition>
+	
+	<!-- Mapping for Edit Country Tracking-->
+	<definition name="editCountry" id="editCountry" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/editCountry.jsp"/>
+		<put-attribute name="title" type="string" value="Edit Country Page" />
+	</definition>
+	
+	<!-- Mapping for Pop Up Message-->
+	<definition name="popupentry" id="popupentry" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/popupentry.jsp" />
+		<put-attribute name="title" type="string" value="Pop Up Message Page" />
+	</definition>
+	
+	<!-- Mapping for PieChart(All Channel Negative Positive Report)-->
+	<definition name="piechart" id="piechart" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/piechart.jsp" />
+		<put-attribute name="title" type="string" value="All Channel Negative Positive Report" />
+	</definition>
+
+<!-- Mapping for printPieChart-->
+	<definition name="printPieChart" id="printPieChart" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/printPieChart.jsp" />
+		<put-attribute name="title" type="string" value="Print Pie Chart" />
+	</definition>
+	
+	<!-- Mapping for printPDFReport-->
+	<definition name="generatePrintPDFReport" id="generatePrintPDFReport" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/generatePrintPDFReport.jsp" />
+		<put-attribute name="title" type="string" value="Print PDF Report" />
+	</definition>
+	
+	<!-- Mapping for printPDFReport-->
+	<definition name="generateBarChart" id="generateBarChart" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/generateBarChart.jsp" />
+		<put-attribute name="title" type="string" value="Bar Chart" />
+	</definition>
+
+<!-- Mapping for PDFReport-->
+	<definition name="PDFReport" id="PDFReport" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/PDFReport.jsp" />
+		<put-attribute name="title" type="string" value="Electronic Media PDF Report" />
+	</definition>
+
+<!-- Mapping for Log Out-->
+	<definition name="logout" id="logout" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/logout.jsp" />
+		<put-attribute name="title" type="string" value="LogOut" />
+	</definition>
+
+<!-- Mapping for search-->
+	<definition name="search" id="search" extends="baseTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/search.jsp" />
+		<put-attribute name="title" type="string" value="search" />
+	</definition>
+	
+
+	<!-- Main Template(main template contain Without Menu) -->
+	<definition name="mainTemplate" id="mainTemplate" template="/WEB-INF/layout/mainLayout.jsp">
+		<put-attribute name="title" value="${title}" />
+		<put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+		<put-attribute name="body" value="${body}" />
+		<put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+	</definition>
+	
+	
+	<!-- Mapping for Registration -->
+	<definition name="registration" id="registration" extends="mainTemplate">
+		<put-attribute name="body" value="/WEB-INF/jsp/registration.jsp" />
+		<put-attribute name="title" type="string" value="EMTS-Registration" />
+	</definition>
+	
+<!-- Mapping for All Channel and Channel wise Negative Positive Report  -->
+<definition name="generateAllChannelPieCharts" template="/WEB-INF/jsp/generateAllChannelPieCharts.jsp"></definition>
+
+<!-- Mapping for Sector wise All Channel Negative Positive Report  -->
+<definition name="generateElectronicMediaSectorWisePieChart" template="/WEB-INF/jsp/generateElectronicMediaSectorWisePieChart.jsp"></definition>
+
+<!-- Mapping for All Paper and Paper wise Negative Positive Report  -->
+<definition name="generatePrintPieChart" template="/WEB-INF/jsp/generatePrintPieChart.jsp"></definition>
+
+<!-- Mapping for Generate Channel Wise PieChart  -->
+<definition name="generateChannelWisePieChart" template="/WEB-INF/jsp/generateChannelWisePieChart.jsp"></definition>
+
+<!-- Mapping for Generate PDFReport for Electronic Media Tracking  -->
+<definition name="generatePDFReport" template="/WEB-INF/jsp/generatePDFReport.jsp"></definition>
+
+
+<!-- For Direct use of jsp calling -->
+<definition name="loginPage" template="/WEB-INF/jsp/welcome.jsp"></definition>
+
+
+</tiles-definitions>
